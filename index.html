@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jamal Ahmad - AI/ML Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p6OCjL8X1i1O6lBQ0ZzWn3zNnN6Pukb+SIt0v/6eeH3Dxo5EZ6QK6g5+vB+Nlq0XcWm9SlpU5IF3p7o8+F3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Background Canvas -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h2 class="logo">Jamal Ahmad</h2>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h3>Hello, I'm <span class="highlight">Jamal Ahmad</span></h3>
+    <p class="typewriter-text">B.Tech CSE Final Year • AI Enthusiast • ML Developer</p>
+    <button id="speakBtn">🎙️ Speak Intro</button>
+  </section>
+
+  <!-- 4D Cube Section -->
+  <section class="cube-section">
+    <div class="cube">
+      <div class="face front">AI</div>
+      <div class="face back">ML</div>
+      <div class="face right">Code</div>
+      <div class="face left">Tech</div>
+      <div class="face top">Data</div>
+      <div class="face bottom">Python</div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hello! I’m a Computer Science student at BTech with a strong passion for artificial intelligence and machine learning. My journey in technology has been driven by a curiosity to understand how machines can learn and adapt to solve complex problems. Throughout my studies, I have developed proficiency in programming languages such as Python and Java and am familiar with libraries and frameworks like TensorFlow and Scikit-learn. I enjoy working on projects that involve data analysis and predictive modeling, and I am eager to apply these skills in real-world applications.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>📈 Milage Prediction</h3>
+        <a href="https://github.com/khanjamal59/milage_prediction" target="_blank" class="project-link">🔗 View Project</a>
+      </div>
+      <div class="card">
+        <h3>🧬 ML-based Diabetes Predictor</h3>
+        <a href="https://github.com/khanjamal59/diabetes_predict" target="_blank" class="project-link">🔗 View Project</a>
+      </div>
+      <div class="card">
+        <h3>💳 Creditworthiness Predictor</h3>
+        <a href="https://github.com/khanjamal59/creditworthiness_prediction_model" target="_blank" class="project-link">🔗 View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Theme Toggle Button -->
+  <button class="toggle-theme" onclick="toggleTheme()">🌓 Toggle Theme</button>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Let's connect! You can find me here:</p>
+    <div class="social-links">
+      <a href="https://github.com/khanjamal59" target="_blank" aria-label="GitHub"><i class="fab fa-github">github</i></a>
+      <a href="https://linkedin.com/in/jamal-ahmad-faruki" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin">linkedin</i></a>
+      <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fab fa-twitter">twitter</i></a>
+      <a href="mailto:jamalfaruki9816@gmail.com" aria-label="Email"><i class="fas fa-envelope">Email</i></a>
+    </div>
+    <p style="margin-top:2rem;">Or send me a message directly:</p>
+    <form action="https://formspree.io/f/xkgvwbke" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>copyright &copy; 2025 Jamal Ahmad | All rights reserved</p>
+  </footer>
+
+</body>
+</html>
