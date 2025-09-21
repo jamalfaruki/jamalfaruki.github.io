@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jamal Ahmad - AI/ML Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p6OCjL8X1i1O6lBQ0ZzWn3zNnN6Pukb+SIt0v/6eeH3Dxo5EZ6QK6g5+vB+Nlq0XcWm9SlpU5IF3p7o8+F3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -16,19 +16,23 @@
 
   <!-- Navbar -->
   <nav class="navbar">
-    <h2 class="logo">Jamal Ahmad</h2>
+    <h3 class="logo">Jamal Ahmad</h3>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <!-- <li><a href="#certificates">Certificates</a></li> -->
+      <!-- <li><a href="#blog">Blog</a></li> -->
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Heraaaao Section -->
   <section class="hero">
     <h3>Hello, I'm <span class="highlight">Jamal Ahmad</span></h3>
     <p class="typewriter-text">B.Tech CSE Final Year • AI Enthusiast • ML Developer</p>
-    <button id="speakBtn">🎙️ Speak Intro</button>
+    <!-- <a href="resume.pdf" class="neon-btn" download>⬇ Download Resume</a> -->
   </section>
 
   <!-- 4D Cube Section -->
@@ -46,8 +50,98 @@
   <!-- About -->
   <section id="about" class="section">
     <h2>About Me</h2>
-    <p>Hello! I’m a BTech Computer Science student with a strong passion for artificial intelligence and machine learning. My journey in technology has been driven by a curiosity to understand how machines can learn and adapt to solve complex problems. Throughout my studies, I have developed proficiency in programming languages such as Python and Java and I'm familiar with libraries and frameworks like TensorFlow and Scikit-learn. I enjoy working on projects that involve data analysis and predictive modeling, and I am eager to apply these skills in real-world applications.</p>
+    <p>Hello! I’m a Computer Science student at BTech with a strong passion for artificial intelligence and machine learning. My journey in technology has been driven by a curiosity to understand how machines can learn and adapt to solve complex problems. Throughout my studies, I have developed proficiency in programming languages such as Python and Java and I am familiar with libraries and frameworks like TensorFlow and Scikit-learn. I enjoy working on projects that involve data analysis and predictive modeling, and I am eager to apply these skills in real-world applications.</p>
   </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-bars">
+      <div class="skill">
+        <p>Python</p>
+        <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
+      </div>
+      <div class="skill">
+        <p>Machine Learning</p>
+        <div class="progress"><div class="progress-bar" style="width:85%"></div></div>
+      </div>
+      <div class="skill">
+        <p>Data Analysis</p>
+        <div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+      </div>
+      <div class="skill">
+        <p>Java</p>
+        <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
+      </div>
+      <div class="skill">
+        <p>MySql</p>
+        <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
+      </div>
+    </div>
+
+    <canvas id="skillsChart" width="400" height="200"></canvas>
+  </section>
+
+  <!-- Journey / Timeline -->
+  <!-- Journey / Timeline -->
+<section id="journey" class="section" style="padding:5rem 2rem; text-align:center;">
+  <h2 style="font-size:2.2rem; color:#00ff88; margin-bottom:1rem;">My Journey</h2>
+  
+  <div style="position:relative; max-width:900px; margin:4rem auto; padding:2rem 0;">
+    <!-- center vertical line -->
+    <div style="content:''; position:absolute; width:4px; background:#00ffcc; top:0; bottom:0; left:50%; margin-left:-2px;"></div>
+    
+    <!-- 2022 -->
+    <div style="padding:1.5rem 2rem; position:relative; width:50%; box-sizing:border-box; left:0; text-align:right;">
+      <div style="position:absolute; top:15px; right:-10px; width:20px; height:20px; border-radius:50%; background:#00ffcc; box-shadow:0 0 10px #00ffcc;"></div>
+      <h3 style="font-size:1.5rem; margin-bottom:.5rem; color:#00ffcc;">2022</h3>
+      <p style="background:rgba(0,0,0,0.6); padding:1rem; border-radius:8px; box-shadow:0 0 10px rgba(0,255,200,0.5);">
+        Explored Python, Java, and Data Structures
+      </p>
+    </div>
+
+    <!-- 2023 -->
+    <div style="padding:1.5rem 2rem; position:relative; width:50%; box-sizing:border-box; left:50%; text-align:left;">
+      <div style="position:absolute; top:15px; left:-10px; width:20px; height:20px; border-radius:50%; background:#00ffcc; box-shadow:0 0 10px #00ffcc;"></div>
+      <h3 style="font-size:1.5rem; margin-bottom:.5rem; color:#00ffcc;">2023</h3>
+      <p style="background:rgba(0,0,0,0.6); padding:1rem; border-radius:8px; box-shadow:0 0 10px rgba(0,255,200,0.5);">
+        Dived into Machine Learning & AI projects
+      </p>
+    </div>
+
+    <!-- 2024 -->
+    <div style="padding:1.5rem 2rem; position:relative; width:50%; box-sizing:border-box; left:0; text-align:right;">
+      <div style="position:absolute; top:15px; right:-10px; width:20px; height:20px; border-radius:50%; background:#00ffcc; box-shadow:0 0 10px #00ffcc;"></div>
+      <h3 style="font-size:1.5rem; margin-bottom:.5rem; color:#00ffcc;">2024</h3>
+      <p style="background:rgba(0,0,0,0.6); padding:1rem; border-radius:8px; box-shadow:0 0 10px rgba(0,255,200,0.5);">
+        Internship in AI/ML, worked on predictive modeling
+      </p>
+    </div>
+
+    <!-- 2025 -->
+    <div style="padding:1.5rem 2rem; position:relative; width:50%; box-sizing:border-box; left:50%; text-align:left;">
+      <div style="position:absolute; top:15px; left:-10px; width:20px; height:20px; border-radius:50%; background:#00ffcc; box-shadow:0 0 10px #00ffcc;"></div>
+      <h3 style="font-size:1.5rem; margin-bottom:.5rem; color:#00ffcc;">2025</h3>
+      <p style="background:rgba(0,0,0,0.6); padding:1rem; border-radius:8px; box-shadow:0 0 10px rgba(0,255,200,0.5);">
+        Final Year – Building impactful AI/ML projects
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Certificates Carousel -->
+  <!-- <section id="certificates" class="section">
+    <h2>Certificates & Achievements</h2>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="certificate">🏆 Machine Learning Certification</div>
+        <div class="certificate">🎓 Data Science with Python</div>
+        <div class="certificate">💡 Data Wrangling</div>
+        <div class="certificate">📜 pandas Certification</div>
+      </div>
+    </div>
+  </section> -->
 
   <!-- Projects -->
   <section id="projects" class="section">
@@ -71,15 +165,16 @@
   <!-- Theme Toggle Button -->
   <button class="toggle-theme" onclick="toggleTheme()">🌓 Toggle Theme</button>
 
+
   <!-- Contact -->
   <section id="contact" class="section">
     <h2>Contact Me</h2>
     <p>Let's connect! You can find me here:</p>
     <div class="social-links">
-      <a href="https://github.com/khanjamal59" target="_blank" aria-label="GitHub"><i class="fab fa-github">github</i></a>
-      <a href="https://linkedin.com/in/jamal-ahmad-faruki" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin">linkedin</i></a>
-      <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fab fa-twitter">twitter</i></a>
-      <a href="mailto:jamalfaruki9816@gmail.com" aria-label="Email"><i class="fas fa-envelope">Email</i></a>
+      <a href="https://github.com/khanjamal59" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/jamal-ahmad-faruki" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="mailto:jamalfaruki9816@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
     <p style="margin-top:2rem;">Or send me a message directly:</p>
     <form action="https://formspree.io/f/xkgvwbke" method="POST" class="contact-form">
@@ -96,7 +191,3 @@
 
 </body>
 </html>
-
-
-
-
