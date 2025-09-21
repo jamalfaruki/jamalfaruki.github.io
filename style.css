@@ -82,13 +82,13 @@ body.light-mode footer { background:#f5f5f5; color:#444; border-top:1px solid #0
 }
 
 .social-links a {
-  font-size:1.5rem;
-  color: #00ff88;
+  font-size:2.5rem;
+  color: #01ff88;
   text-decoration: none; /* Remove underline */
   position: relative;
-  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
-  background: linear-gradient(90deg, #00ff88, #00cc66, #00ff88);
-  background-size: 200% 200%;
+  transition: transform 1.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  background: linear-gradient(91deg, #01ff88, #00cc66, #00ff88);
+  background-size: 202% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -96,10 +96,10 @@ body.light-mode footer { background:#f5f5f5; color:#444; border-top:1px solid #0
 .social-links a::before {
   content: '';
   position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88; /* Lighter shadow */
-  opacity: 0;
+  inset: 1;
+  border-radius: 51%;
+  box-shadow: 1 0 10px #00ff88, 0 0 20px #00ff88; /* Lighter shadow */
+  opacity: 1;
   transition: opacity 0.3s ease;
 }
 
@@ -131,3 +131,230 @@ body.light-mode footer { background:#f5f5f5; color:#444; border-top:1px solid #0
     text-shadow: none;
   }
 }
+/* General */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #00ffcc;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00ffcc;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero .highlight {
+  color: #00ffcc;
+}
+
+.hero button,
+.neon-btn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Neon Resume Button */
+.neon-btn {
+  background: transparent;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc inset;
+}
+.neon-btn:hover {
+  background: #00ffcc;
+  color: #000;
+  box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+}
+
+/* Skills */
+.skills-bars {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.skill {
+  margin-bottom: 1rem;
+}
+
+.skill p {
+  margin: 0 0 0.3rem;
+}
+
+.progress {
+  background: #1a1a1a;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 15px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #00ffcc, #00ccff);
+  width: 0;
+  animation: growBar 2s forwards;
+}
+
+@keyframes growBar {
+  from { width: 0; }
+  to { width: inherit; }
+}
+
+
+
+/* Certificates Carousel */
+.carousel {
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  animation: scrollCarousel 20s linear infinite;
+}
+
+.certificate {
+  min-width: 200px;
+  padding: 2rem;
+  background: #111;
+  border: 2px solid #00ffcc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+@keyframes scrollCarousel {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Blog */
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blog-card {
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #00ffcc;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+.blog-card h3 {
+  margin-bottom: 1rem;
+  color: #00ccff;
+}
+
+.blog-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+.blog-card a:hover {
+  text-decoration: underline;
+}
+
+/* Contact */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.social-links a {
+  font-size: 1.2rem;
+  color: #00ffcc;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+  color: #00ccff;
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #00ffcc;
+}
+
+/* Ensure the background canvas stays at the very back */
+#bgCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* always behind everything */
+}
+
