@@ -2,40 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jamal Ahmad - AI/ML Portfolio</title>
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- JS -->
   <script defer src="script.js"></script>
 </head>
+
 <body>
 
   <!-- Background Canvas -->
   <canvas id="bgCanvas"></canvas>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <h3 class="logo">Jamal Ahmad</h3>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#journey">Journey</a></li>
-      <!-- <li><a href="#certificates">Certificates</a></li> -->
-      <!-- <li><a href="#blog">Blog</a></li> -->
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Heraaaao Section -->
-  <section class="hero">
+  <!-- HERO -->
+  <section class="hero" id="home">
     <h3>Hello, I'm <span class="highlight">Jamal Ahmad</span></h3>
-    <p class="typewriter-text">B.Tech CSE Final Year • AI Enthusiast • ML Developer</p>
-    <!-- <a href="resume.pdf" class="neon-btn" download>⬇ Download Resume</a> -->
+    <p class="typewriter-text"></p>
   </section>
 
-  <!-- 4D Cube Section -->
+  <!-- Cube -->
   <section class="cube-section">
     <div class="cube">
       <div class="face front">AI</div>
@@ -50,133 +41,151 @@
   <!-- About -->
   <section id="about" class="section">
     <h2>About Me</h2>
-    <p>Hello! I’m a Computer Science student at BTech with a strong passion for artificial intelligence and machine learning. My journey in technology has been driven by a curiosity to understand how machines can learn and adapt to solve complex problems. Throughout my studies, I have developed proficiency in programming languages such as Python and Java and I am familiar with libraries and frameworks like TensorFlow and Scikit-learn. I enjoy working on projects that involve data analysis and predictive modeling, and I am eager to apply these skills in real-world applications.</p>
+    <p>
+      Hello! I’m a Computer Science student pursuing B.Tech CSE with a strong passion for Artificial Intelligence and Machine Learning.
+      My journey is driven by curiosity to understand how machines learn and solve real-world problems.
+      I have experience in Python, Java, and tools like TensorFlow and Scikit-learn.
+      I enjoy working on predictive modeling, data analysis, and impactful AI projects.
+    </p>
   </section>
 
   <!-- Skills -->
   <section id="skills" class="section">
     <h2>Skills</h2>
+
     <div class="skills-bars">
       <div class="skill">
         <p>Python</p>
-        <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
+        <div class="progress"><div class="progress-bar" data-width="90%"></div></div>
       </div>
+
       <div class="skill">
         <p>Machine Learning</p>
-        <div class="progress"><div class="progress-bar" style="width:85%"></div></div>
+        <div class="progress"><div class="progress-bar" data-width="85%"></div></div>
       </div>
+
       <div class="skill">
         <p>Data Analysis</p>
-        <div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+        <div class="progress"><div class="progress-bar" data-width="80%"></div></div>
       </div>
+
       <div class="skill">
         <p>Java</p>
-        <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
+        <div class="progress"><div class="progress-bar" data-width="75%"></div></div>
       </div>
+
       <div class="skill">
-        <p>MySql</p>
-        <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
+        <p>MySQL</p>
+        <div class="progress"><div class="progress-bar" data-width="75%"></div></div>
       </div>
     </div>
-
-    <canvas id="skillsChart" width="400" height="200"></canvas>
   </section>
 
-  <!-- Journey / Timeline -->
-  <!-- Journey / Timeline -->
-<section id="journey" class="section" style="padding:5rem 2rem; text-align:center;">
-  <h2 style="font-size:2.2rem; color:#00ff88; margin-bottom:1rem;">My Journey</h2>
-  
-  <div style="position:relative; max-width:900px; margin:4rem auto; padding:2rem 0;">
-    <!-- center vertical line -->
-    <div style="content:''; position:absolute; width:4px; background:#00ffcc; top:0; bottom:0; left:50%; margin-left:-2px;"></div>
-    
-    <!-- 2022 -->
-    <div style="padding:1.5rem 2rem; position:relative; width:50%; box-sizing:border-box; left:0; text-align:right;">
-      <div style="position:absolute; top:15px; right:-10px; width:20px; height:20px; border-radius:50%; background:#00ffcc; box-shadow:0 0 10px #00ffcc;"></div>
-      <h3 style="font-size:1.5rem; margin-bottom:.5rem; color:#00ffcc;">2022</h3>
-      <p style="background:rgba(0,0,0,0.6); padding:1rem; border-radius:8px; box-shadow:0 0 10px rgba(0,255,200,0.5);">
-        Explored Python, Java, and Data Structures
-      </p>
-    </div>
+  <!-- Journey (WORKING) -->
+  <section id="journey" class="section">
+    <h2>My Journey</h2>
 
-    <!-- 2023 -->
-    <div style="padding:1.5rem 2rem; position:relative; width:50%; box-sizing:border-box; left:50%; text-align:left;">
-      <div style="position:absolute; top:15px; left:-10px; width:20px; height:20px; border-radius:50%; background:#00ffcc; box-shadow:0 0 10px #00ffcc;"></div>
-      <h3 style="font-size:1.5rem; margin-bottom:.5rem; color:#00ffcc;">2023</h3>
-      <p style="background:rgba(0,0,0,0.6); padding:1rem; border-radius:8px; box-shadow:0 0 10px rgba(0,255,200,0.5);">
-        Dived into Machine Learning & AI projects
-      </p>
-    </div>
+    <div class="timeline">
 
-    <!-- 2024 -->
-    <div style="padding:1.5rem 2rem; position:relative; width:50%; box-sizing:border-box; left:0; text-align:right;">
-      <div style="position:absolute; top:15px; right:-10px; width:20px; height:20px; border-radius:50%; background:#00ffcc; box-shadow:0 0 10px #00ffcc;"></div>
-      <h3 style="font-size:1.5rem; margin-bottom:.5rem; color:#00ffcc;">2024</h3>
-      <p style="background:rgba(0,0,0,0.6); padding:1rem; border-radius:8px; box-shadow:0 0 10px rgba(0,255,200,0.5);">
-        Internship in AI/ML, worked on predictive modeling
-      </p>
-    </div>
-
-    <!-- 2025 -->
-    <div style="padding:1.5rem 2rem; position:relative; width:50%; box-sizing:border-box; left:50%; text-align:left;">
-      <div style="position:absolute; top:15px; left:-10px; width:20px; height:20px; border-radius:50%; background:#00ffcc; box-shadow:0 0 10px #00ffcc;"></div>
-      <h3 style="font-size:1.5rem; margin-bottom:.5rem; color:#00ffcc;">2025</h3>
-      <p style="background:rgba(0,0,0,0.6); padding:1rem; border-radius:8px; box-shadow:0 0 10px rgba(0,255,200,0.5);">
-        Final Year – Building impactful AI/ML projects
-      </p>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Certificates Carousel -->
-  <!-- <section id="certificates" class="section">
-    <h2>Certificates & Achievements</h2>
-    <div class="carousel">
-      <div class="carousel-track">
-        <div class="certificate">🏆 Machine Learning Certification</div>
-        <div class="certificate">🎓 Data Science with Python</div>
-        <div class="certificate">💡 Data Wrangling</div>
-        <div class="certificate">📜 pandas Certification</div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>2022</h3>
+          <p>Explored Python, Java, and Data Structures</p>
+        </div>
       </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>2023</h3>
+          <p>Dived into Machine Learning & AI projects</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>2024</h3>
+          <p>Built AI/ML projects and worked on predictive modeling</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>2025</h3>
+          <p>Final Year – Building impactful AI/ML projects</p>
+        </div>
+      </div>
+
     </div>
-  </section> -->
+  </section>
 
   <!-- Projects -->
   <section id="projects" class="section">
     <h2>Projects</h2>
+
     <div class="project-cards">
+
       <div class="card">
-        <h3>📈 Milage Prediction</h3>
-        <a href="https://github.com/khanjamal59/milage_prediction" target="_blank" class="project-link">🔗 View Project</a>
+        <h3>📈 Mileage Prediction</h3>
+
+        <div class="project-btns">
+          
+
+          <a class="project-link secondary"
+            href="https://github.com/khanjamal59/milage_prediction"
+            target="_blank">
+            GitHub
+          </a>
+        </div>
       </div>
+
       <div class="card">
-        <h3>🧬 ML-based Diabetes Predictor</h3>
-        <a href="https://github.com/khanjamal59/diabetes_predict" target="_blank" class="project-link">🔗 View Project</a>
+        <h3>🧬 Diabetes Predictor</h3>
+
+        <div class="project-btns">
+          
+
+          <a class="project-link secondary"
+            href="https://github.com/khanjamal59/diabetes_predict"
+            target="_blank">
+            GitHub
+          </a>
+        </div>
       </div>
+
       <div class="card">
         <h3>💳 Creditworthiness Predictor</h3>
-        <a href="https://github.com/khanjamal59/creditworthiness_prediction_model" target="_blank" class="project-link">🔗 View Project</a>
+
+        <div class="project-btns">
+         
+
+          <a class="project-link secondary"
+            href="https://github.com/khanjamal59/creditworthiness_prediction_model"
+            target="_blank">
+            GitHub
+          </a>
+        </div>
       </div>
+
     </div>
   </section>
-
-  <!-- Theme Toggle Button -->
-  <button class="toggle-theme" onclick="toggleTheme()">🌓 Toggle Theme</button>
-
 
   <!-- Contact -->
   <section id="contact" class="section">
     <h2>Contact Me</h2>
     <p>Let's connect! You can find me here:</p>
+
     <div class="social-links">
       <a href="https://github.com/khanjamal59" target="_blank"><i class="fab fa-github"></i></a>
       <a href="https://linkedin.com/in/jamal-ahmad-faruki" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
       <a href="mailto:jamalfaruki9816@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
-    <p style="margin-top:2rem;">Or send me a message directly:</p>
+
+    <p style="margin-top: 2rem;">Or send me a message directly:</p>
+
     <form action="https://formspree.io/f/xkgvwbke" method="POST" class="contact-form">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="_replyto" placeholder="Your Email" required />
@@ -186,8 +195,26 @@
   </section>
 
   <footer>
-    <p>copyright &copy; 2025 Jamal Ahmad | All rights reserved</p>
+    <p>© 2025 Jamal Ahmad | All rights reserved</p>
   </footer>
+
+  <!-- Bottom Navbar -->
+  <nav class="bottom-nav">
+    <a href="#home"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a href="#about"><i class="fa-solid fa-user"></i><span>About</span></a>
+    <a href="#skills"><i class="fa-solid fa-brain"></i><span>Skills</span></a>
+    <a href="#journey"><i class="fa-solid fa-road"></i><span>Journey</span></a>
+    <a href="#projects"><i class="fa-solid fa-diagram-project"></i><span>Projects</span></a>
+    <a href="#contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+  </nav>
+
+  <!-- Iframe Modal -->
+  <div class="iframe-modal" id="iframeModal">
+    <div class="iframe-box">
+      <button class="close-iframe" onclick="closeProject()">✖</button>
+      <iframe id="projectFrame" src=""></iframe>
+    </div>
+  </div>
 
 </body>
 </html>
